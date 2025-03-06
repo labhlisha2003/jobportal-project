@@ -1,5 +1,5 @@
 import CustomInput from "../../components/CustomInput/CustomInput";
-import COLOR from "../..config/color";
+// import COLOR from "../..config/color";
 import "./style.css";
 function RegisterPage() {
     return(

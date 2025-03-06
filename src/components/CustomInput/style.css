@@ -1,5 +1,21 @@
 .CustomInputBaseContainer{
 padding: 10px;
 border-radius: 10px;
+border: 1px solid var(--borderColor) ;
 display: flex;
+gap: 4px;
 }
+
+.CustomInputInputContainer {
+    flex: 1;
+}
+
+.CustomInputInputContainer input {
+    border: none;
+    background-Color: transparent ;
+}
+
+.CustomInputInputContainer input:focus {
+    outline: none;
+}
+
