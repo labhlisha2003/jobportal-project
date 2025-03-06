@@ -1,19 +1,19 @@
-import './App.css';
+import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import RegisterPage from "./Pages/RegisterPage/RegisterPage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
-
-
+import RegisterPage from "./Pages/RegisterPage/RegisterPage";
 function App() {
   return (
-  <BrowserRouter>
-  <Routes>
-    <Route path="/Register" element={<RegisterPage/>}/>
-    <Route path="/login" element={<LoginPage/>}/>
-  </Routes>
-  </BrowserRouter>
+    
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path="/Login" element={<LoginPage />} />
+        <Route path="/Register" element={<RegisterPage />} />
+      </Routes>
+    </BrowserRouter>
+  
   );
 }
-
 export default App;

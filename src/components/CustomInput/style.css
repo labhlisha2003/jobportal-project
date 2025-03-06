@@ -1,27 +1,27 @@
-.CustomInputBaseContainer{
-padding: 10px;
-border-radius: 10px;
-border: 1px solid var(--borderColor) ;
-display: flex;
-gap: 4px;
+.customInputBaseContainer{
+    padding:10px;
+    border-radius:20px;
+    border:1px solid var(--borderColor);
+    display:flex;
+    gap:4px;
+    
+    
 }
-
-.CustomInputIconContainer {
+.customInputBaseContainer input{
+    border-color:black;
+    background-Color:transparent;
+    
 
 }
+.customInputBaseContainer input:focus{
+    outline:none;
 
-.CustomInputInputContainer {
-    flex: 1;
 }
+.customInputInputContainer{
+flex:1    
 
-.CustomInputInputContainer input {
-    border: none;
-    background-Color: transparent ;
 }
-
-.CustomInputInputContainer input:focus {
-    outline: none;
-}
-
-.CustomInputPasswordContainer {
+.customInputIConContainer{
+    position:relative;
+    
 }
