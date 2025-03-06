@@ -1,0 +1,32 @@
+import CustomInput from "../../components/CustomInput/CustomInput";
+import "./style.css";
+import { MdDriveFileRenameOutline } from "react-icons/md";
+import {FaUserAlt } from "react-icons/fa";
+import { FaKey} from "react-icons/fa";
+function LoginPage() {
+    return (
+
+        <div className="loginPageBaseContainer">
+            
+            <div className="loginPageContentBaseContainer">
+                <div className="loginPageContentTitleContainer">
+                    <h1>ONLINE JOB PORTAL's</h1>
+                     </div>
+                     <h2>lets get a job</h2>
+                <div className="loginPageContentInputContainer">
+                <CustomInput type={"text"} placeholder={"Enter Name"} Icon= { MdDriveFileRenameOutline} />
+                <CustomInput type={"email"} placeholder={"Enter Email"} Icon={FaUserAlt}/>
+                <CustomInput type={"password"} placeholder={"Enter Password"} Icon={FaKey} isSecureEntry={true}/>
+                </div>
+                <div className="loginPagecontentbuttonContainer">
+                    <button type="submit">log in</button>
+            
+                
+                </div>
+                <div className="loginPageContentRegisterContainer"></div>
+        
+            </div>
+        </div>
+    );
+}
+export default LoginPage;
