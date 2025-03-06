@@ -1,5 +1,0 @@
-.RegisterPageBaseContainer{
-    width:100%;
-    height:100vh;
-    background-color: lineargradient(to top,var(--baseColor),var(--secondaryColor),var(--whiteColor));
-}
