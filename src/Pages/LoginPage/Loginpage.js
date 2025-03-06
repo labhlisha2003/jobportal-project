@@ -1,11 +1,11 @@
-import { useState } from"react";
+import { useState } from "react";
 import CustomInput from "../../components/CustomInput/CustomInput";
 import "./style.css";
 import { FaUserAlt } from "react-icons/fa";
 import { FaKey } from "react-icons/fa";
 
 function LoginPage () {
-    
+    const [email, setEmail] = useState("@gmail.com");
     return ( 
 <div className="loginPageBaseContainer">
 <div className="loginPageContentBaseContainer">
@@ -15,7 +15,7 @@ function LoginPage () {
                 ONLINE JOB PORTAL
                 </i>
             </h1>
-            <h4>`pick a job` </h4>
+            <h4>Enter your confeditional </h4>
         </div>
         <div className="loginPageContentInputContainer">
             <CustomInput type={"email"}
@@ -23,7 +23,7 @@ function LoginPage () {
             Icon={FaUserAlt}
             inputValue={email}
             onChangeText={(e)=> {
-            SiGnometerminal(e.target.value);
+            setEmail(e.target.value);
             }}
             />
             <CustomInput type="password"

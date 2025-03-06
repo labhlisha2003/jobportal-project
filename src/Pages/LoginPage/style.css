@@ -1,11 +1,10 @@
 .loginPageBaseContainer {
     width: 100%;
     height: 100vh;
-    background-color: linear-gradient( to right,var(--baseColor), var(--baseColorDrk));
+    background: linear-gradient( to right,var(--baseColor), var(--baseColorDrk));
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--baseColor);
     background-color: rgb(59, 59, 94);
 }
 

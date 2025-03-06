@@ -16,26 +16,28 @@ function CustomInput({
 
     return (
         <div className="CustomInputBaseContainer">
-            <div className="custonInputIconContainer">
+            <div className="CustomInputIconContainer">
                 {Icon ? <Icon color={iconColor} size={15} /> : null}
             </div>
-            <div className="customInputInputContainer">
+            <div className="CustomInputInputContainer">
                 <input
                 value={inputValue}
                 type={isSecureEntry ? (showText ? "text" : "password") : type}
                 placeholder={placeholder}
-                onChange={onchangeText}
+                onChange={onChangeText}
                 />
             </div>
             {isSecureEntry && (
                 <div
-                className="customInputPasswordContainer"
+                className="CustomInputPasswordContainer"
                 onClick={() => {
                     setShowText(!showText);
                 }}
                 >
                     {showText ? <FaEye /> : <FaEyeSlash />}
         </div>
+            )}
+            </div>
     );
 }
 export default CustomInput;

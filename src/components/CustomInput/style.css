@@ -6,6 +6,10 @@ display: flex;
 gap: 4px;
 }
 
+.CustomInputIconContainer {
+
+}
+
 .CustomInputInputContainer {
     flex: 1;
 }
@@ -19,3 +23,5 @@ gap: 4px;
     outline: none;
 }
 
+.CustomInputPasswordContainer {
+}
