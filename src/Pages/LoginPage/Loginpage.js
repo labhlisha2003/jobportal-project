@@ -1,3 +1,4 @@
+import ASSETS from "../../assets";
 import CustomInput from "../../components/CustomInput/CustomInput";
 import "./style.css";
 import { MdDriveFileRenameOutline } from "react-icons/md";
@@ -7,7 +8,7 @@ function LoginPage() {
     return (
 
         <div className="loginPageBaseContainer">
-            
+            <img src={require("../../assets/images/job image 1_enhanced.jpg")} ></img>
             <div className="loginPageContentBaseContainer">
                 <div className="loginPageContentTitleContainer">
                     <h1>ONLINE JOB PORTAL's</h1>
