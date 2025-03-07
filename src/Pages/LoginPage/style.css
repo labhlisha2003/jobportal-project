@@ -5,8 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+
 
     
+    }
+    .baseContainerImage{
+        width:100px;
+        
     }
     
     .loginPageContentBaseContainer{

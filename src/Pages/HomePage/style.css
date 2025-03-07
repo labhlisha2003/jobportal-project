@@ -1,0 +1,17 @@
+.baseContainer{
+    width:100px;
+    height:100vh;
+    background-color: var(--baseColor);
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.baseContainer img {
+    width: 20%;
+}

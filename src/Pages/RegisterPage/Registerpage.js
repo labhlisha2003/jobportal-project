@@ -1,11 +1,12 @@
 
 import CustomInput from "../../components/CustomInput/CustomInput";
-// import COLOR from "../..config/color";
 import "./style.css";
 function RegisterPage() {
     return(
         <div className="RegisterPageBaseContainer">
-            <img src="RegisterPageImage.jpg"> </img>
+            
+            <img src={require("../../assets/images/RegisterPageImage.jpg")}/>
+        
              <div className="RegisterPageContentBaseContainer">
                 <div className="RegisterPageContentTitleContainer">
                     <h1>CREATE YOUR PROFILE</h1>
