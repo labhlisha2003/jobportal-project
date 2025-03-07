@@ -1,4 +1,4 @@
-import ASSETS from "../../assets";
+
 import CustomInput from "../../components/CustomInput/CustomInput";
 import "./style.css";
 import { MdDriveFileRenameOutline } from "react-icons/md";

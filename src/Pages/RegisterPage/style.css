@@ -1,0 +1,30 @@
+RegisterPageBaseContainer{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(to top,var(--baseColor), var(--basecolordark),var(--secondarycolor));
+    display: flex;
+    align-items: center;
+    justify-content: bottom left;
+    }
+    
+    .RegisterPageContentBaseContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        background-Color: var(--whitecolor);
+        box-shadow: 0px 0px 20px var(--whitecolor);
+        border-radius: 10px;
+        border: 1px solid var(--blackColor);
+    }
+    
+    .RegisterPageContentTitleContainer{
+        display: flex;
+        flex-direction: column;
+        align-items:bottom left;
+        gap: 10px;
+        font-size:small;
+        text-decoration:underline;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
