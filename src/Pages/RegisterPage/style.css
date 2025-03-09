@@ -1,36 +1,31 @@
-RegisterPageBaseContainer{
+.RegisterPageBaseContainer{
+    height: 100vh;
     width:100%;
-    height:100vh;
-    background: linear-gradient(to top,var(--baseColor), var(--basecolordark),var(--secondarycolor));
     display: flex;
+    background-size: cover;
+}
+
+.RegisterPageBaseContainer img{
+width:100%;
+height: 100vh;
+}
+
+.RegisterPageContentBaseContainer{
+    
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    background-color: aliceblue;
     align-items: center;
-    justify-content: bottom left;
-    }
+    flex-direction: column;
+    border-radius: 20px;
+
     
-    .RegisterPageContentBaseContainer{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-        background-Color: var(--whitecolor);
-        box-shadow: 0px 0px 20px var(--whitecolor);
-        border-radius: 10px;
-        border: 1px solid var(--blackColor);
-    }
+}
+.RegisterPageContentInputContainer{
+padding-bottom:20px;
+}
+.RegisterPageContentTitleContainer{
+    padding: 10px 10px 20px 10px;
     
-    .RegisterPageContentTitleContainer{
-        display: flex;
-        flex-direction: column;
-        align-items:bottom left;
-        gap: 10px;
-        font-size:small;
-        text-decoration:underline;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .RegisterPageBaseContainer img{
-        background-size:cover;
-        height:100vh;
-        width:100%;
-    }
-        
-    
+}
