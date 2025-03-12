@@ -18,10 +18,14 @@
 
 }
 .customInputInputContainer{
-flex:1    
-
+flex:1   
 }
+
 .customInputIConContainer{
     position:relative;
     
+}
+
+.customInputInputContainer input {
+    background-color: transparent;
 }

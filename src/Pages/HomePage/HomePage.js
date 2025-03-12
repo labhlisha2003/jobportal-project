@@ -1,6 +1,8 @@
 import ASSETS from "../../assets";
+import CustomButton from "../../components/CustomButton/CustomButton";
 import COLOR from "../../config/color";
 import "./style.css";
+
 function HomePage() {
 return(
     <div className="baseContainer">

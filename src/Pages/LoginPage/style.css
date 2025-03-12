@@ -5,8 +5,7 @@
     display: flex;
     align-items:right;
     justify-content:center;
-    padding-top: 100px;
-    padding-bottom: 88px;
+    
     
     }
     
@@ -26,6 +25,7 @@
     }
     
     .loginPageContentTitleContainer{
+    
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -42,6 +42,7 @@
         display:flex;
         gap: 10px;
         flex-direction: column;
+        width:20px;
         
         
         
@@ -52,8 +53,12 @@
     justify-content: space-between;
     margin-left:20px;
     display:flex;
-    
-    
+    padding: 10px ;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
     
     }
     #h2{
@@ -62,3 +67,4 @@
         text-decoration-color: #001f2d;
     
     }
+
