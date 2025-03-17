@@ -1,10 +1,10 @@
 import"./style.css";
-function CustomButton({backgroundColor, color, title, onclick}) {
+function CustomButton({backgroundColor, color, title, onClick}) {
     return (
         <div
             className="customButtonBaseContainer"
             style={{backgroundColor,color}}
-            onclick={onclick}
+            onClick={onClick}
             >
                 {title}
             </div>
