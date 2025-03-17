@@ -5,7 +5,8 @@
     display: flex;
     align-items:right;
     justify-content:center;
-    
+    padding-top: 100px;
+    padding-bottom: 88px;
     
     }
     
@@ -49,7 +50,7 @@
     }
     
     
-    .loginPagecontentbuttonContainer{
+    .loginPagecontentButtonContainer{
     justify-content: space-between;
     margin-left:20px;
     display:flex;
@@ -61,10 +62,5 @@
     align-content: center;
     
     }
-    #h2{
-        color:#001f2d;
-        align-items:center;
-        text-decoration-color: #001f2d;
-    
-    }
+
 

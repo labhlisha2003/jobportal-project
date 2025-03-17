@@ -9,6 +9,7 @@ import { FaKey} from "react-icons/fa";
 
 function LoginPage() {
     const [email, setEmail]= useState("gmail.com");
+    const [name, setname]=useState("");
     return (
 
         <div className="loginPageBaseContainer">
@@ -18,12 +19,11 @@ function LoginPage() {
                     <h1>ONLINE JOB PORTAL's</h1>
                      </div>
                      <h2>lets get a job</h2>
-                     <h4>{`Welcome $(email)`}</h4>
+                     {/* <h4>{`Welcome $(email)`}</h4> */}
                 <div className="loginPageContentInputContainer">
-                <CustomInput type={"text"} placeholder={"Enter Name"} Icon= { MdDriveFileRenameOutline}/>
-                <CustomInput type={"email"} placeholder={"Enter Email"} Icon={FaUserAlt} inputValue={email}onChangeText={(e) => {setEmail(e.target.value);
-                }}
-                />
+                <CustomInput type={"text"} placeholder={"Enter Name"} Icon= { MdDriveFileRenameOutline} inputvalue={name}onChangeText={(e)=>{setname(e.target.value)}}/>
+                <CustomInput type={"email"} placeholder={"Enter Email"} Icon={FaUserAlt} inputValue={email} onChangeText={(e) => {setEmail(e.target.value)}}/>
+                
                 <CustomInput type={"password"} placeholder={"Enter Password"} Icon={FaKey} isSecureEntry={true}/>
                 </div>
                 <div className="loginPagecontentButtonContainer">
