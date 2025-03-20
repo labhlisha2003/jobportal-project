@@ -1,3 +1,5 @@
+import{ signInWithEmailAndPassword } from "firebase/auth";
+import CustomButton from "../../components/CustomButton/CustomButton";
 import{useState} from"react";
 import CustomInput from "../../components/CustomInput/CustomInput";
 
@@ -5,14 +7,42 @@ import "./style.css";
 import { MdDriveFileRenameOutline } from "react-icons/md";
 import {FaUserAlt } from "react-icons/fa";
 import { FaKey} from "react-icons/fa";
-
+import { useNavigate } from "react-router-dom";
+import { auth, database} from "../../firebase";
+import {ref, set} from "firebase/database";
 
 function LoginPage() {
     const [email, setEmail]= useState("gmail.com");
     const [name, setname]=useState("");
-    return (
+    const [password, setPassword] = useState("");
+    const [buttonText, setButtonText] = useState("login");
+    const navigate = useNavigate();
 
-        <div className="loginPageBaseContainer">
+    const handlelogin = async () => {
+        try {
+            if (email == "" ||  password == "") alert("Please fill out the fields");
+            else {
+                setButtonText("Please Wait...");
+                const response = await signInWithEmailAndPassword(
+                    auth,
+                    name,
+                    email,
+                    password
+                );
+                setButtonText("login");
+                if (response.user.uid) {
+                    navigate("/")
+                }
+            }
+        } catch (err) {
+            setButtonText("login");
+            setEmail("");
+            alert(err);
+        }
+    };
+    return (
+      <div
+       className="loginPageBaseContainer">
             <img src={require("../../assets/images/job image 1_enhanced.jpg")} ></img>
             <div className="loginPageContentBaseContainer">
                 <div className="loginPageContentTitleContainer">
@@ -27,9 +57,8 @@ function LoginPage() {
                 <CustomInput type={"password"} placeholder={"Enter Password"} Icon={FaKey} isSecureEntry={true}/>
                 </div>
                 <div className="loginPagecontentButtonContainer">
-                    <button type="submit">log in</button>
-            
-                
+                    <button onClick={handleLogin}> </button>{""}
+                <CustomButton color={"white"} backgroundColor={"black"} title={"login"}/>
                 </div>
 
                 <div className="loginPageContentRegisterContainer"></div>
