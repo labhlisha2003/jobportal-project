@@ -18,7 +18,10 @@ function LoginPage() {
     const [buttonText, setButtonText] = useState("login");
     const navigate = useNavigate();
 
-    const handlelogin = async () => {
+ const handlelogin= ()=> {
+    localStorage.setItem("uid", "AIzaSyAGJYPg9rzCo3q6NiU639pTqQ8lSO3qQr");
+ };
+    const handleLogin = async () => {
         try {
             if (email == "" ||  password == "") alert("Please fill out the fields");
             else {
@@ -31,7 +34,7 @@ function LoginPage() {
                 );
                 setButtonText("login");
                 if (response.user.uid) {
-                    navigate("/")
+                    navigate("/home")
                 }
             }
         } catch (err) {
