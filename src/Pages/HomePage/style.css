@@ -4,19 +4,8 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
-   /* rection: center;
-    background-position: center;
-    background-size: cover; flex-di */
-    background-color: #001f2d;
-
-    /* padding-left: 20px;
-    display:flex;
-    flex-direction: column;
-    background-size:contain;
-    justify-content: center;
-    align-items: center;
-    background-color:var(--baseColor);
-     */
+    
+     
 }
 
 .baseContainer img{
@@ -28,20 +17,10 @@
 
 
 .homePageContentBaseContainer{
-    background-color: #001f2d;
-    color: white;
-    justify-content:center;
-    padding-top:200px;
-    padding-right:200px;
-   
-    text-decoration:none;
+   flex:1;
+   display: flex;
 }
-    .homePageContentBaseContainer h2{
-        text-decoration: none;
-     }
-
-
+   
 .homePageNavbarBaseContainer{
-
     
 }
