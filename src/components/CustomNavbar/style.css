@@ -1,3 +1,40 @@
-.CustomNavbarBaseConatiner{
+.CustomNavbarBaseContainer{
     display:flex;
+    flex-direction:row;
+    color:white;
+    padding-right: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.CustomNavbarLogoContainer{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    
+}
+.CustomNavbarLinkContainer{
+    display:flex;
+    flex: 4;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.CustomNavbarProfileContainer{
+flex:1;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-left: 15px;
+}
+.navbarLogoIcon :hover{
+
+}
+.CustomNavbarLinkContainer p:hover{
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
