@@ -1,12 +1,59 @@
+// import ASSETS from "../../assets";
 import React from "react";
-import COLOR from "../../config/color";
-import assests from
-function LandingPage() {
-    return <div>
-         {/* <img src={require("../../assets/images/homepagesecond.jpg")} ></img>  */}
-        <h1>FIND YOUR DREAM JOB HERE.....</h1>
-        <h2>(1)"Believe you can and you're halfway there"</h2>
-        <h2>(2)"if opportunity doesn't knock,build a door....."</h2>
-    </div>;
-}
+import "./style.css";
+
+const LandingPage = () => {
+  return (
+    <div className="container">
+      
+      <header className="header">
+        <h1>See who's hiring in your area.</h1>
+        
+        <div className="buttons">
+          <button className="apply">Apply Jobs</button>
+          <button className="see-all">SEE ALL JOBS</button>
+        </div>
+      </header>
+      <section className="categories">
+        <div className="category">
+          <h3>ENGINEERING</h3>
+          <ul>
+            <li>Further Education</li>
+            <li>Government & Politics</li>
+            <li>Health Engineering</li>
+            <li>Higher Education</li>
+          </ul>
+        </div>
+        <div className="category">
+          <h3>GRADUATES</h3>
+          <ul>
+            <li>Literature</li>
+            <li>Marketing & PR</li>
+            <li>Media</li>
+            <li>Recruitment</li>
+          </ul>
+        </div>
+        <div className="category">
+          <h3>HEALTH</h3>
+          <ul>
+            <li>Leisure</li>
+            <li>Marketing & PR</li>
+            <li>Recruitment</li>
+            <li>Sales & FMCG</li>
+          </ul>
+        </div>
+        <div className="category">
+          <h3>TECHNOLOGY</h3>
+          <ul>
+            <li>Administration</li>
+            <li>Arts & Heritage</li>
+            <li>Creative</li>
+            <li>Construction</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  );
+};
+
 export default LandingPage;
