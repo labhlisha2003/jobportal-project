@@ -6,8 +6,12 @@ import RegisterPage from "./Pages/RegisterPage/Registerpage";
 import AboutPage from "./Pages/HomePage/Pages/AboutPage/AboutPage";
 import JobsPage from "./Pages/HomePage/Pages/JobsPage/JobsPage";
 import BlogPage from "./Pages/HomePage/Pages/BlogPage/BlogPage";
+<<<<<<< HEAD
 // import FresherPage from"./Pages/FresherPage/FresherPage";
 // import { NewBlogPage } from "./pages/HomePage/BlogPage/Pages/NewBlogPage/NewBlogPage";
+=======
+import { NewBlogPage } from "./pages/HomePage/BlogPage/Pages/NewBlogPage/NewBlogPage";
+>>>>>>> b1ddf6d893d35c159d888bfd212af601f7bbec3f
 import LandingPage from "./Pages/HomePage/Pages/LandingPage/LandingPage";
 import Fresher from "./Pages/FresherPage/FresherPage";
 import WorkfromhomePage from "./Pages/WorkfromhomePage/WorkfromhomePage";
@@ -25,7 +29,7 @@ function App() {
           <Route path="/fresher" element={<Fresher />}/>
           <Route path="/workhome" element={<workhome/>}/>
         </Route>
-        {/* <Route path="/new-blog" element={<NewBlogPage />} /> */}
+        { <Route path="/new-blog" element={<NewBlogPage />} />}
         <Route path="/Login" element={<LoginPage />} />
         <Route path="/Register" element={<RegisterPage />} />
       </Routes>
