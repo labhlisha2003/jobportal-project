@@ -3,7 +3,7 @@
     width:100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     background-size: cover;
 }
 
@@ -13,26 +13,28 @@ height: 100vh;
 }
 
 .RegisterPageContentBaseContainer{
-    
     justify-content: center;
     display: flex;
     position: absolute;
-    background-color: aliceblue;
+    background-color:whitesmoke;
     align-items: center;
     flex-direction: column;
-    border-radius: 20px;
-
-    
+    border:2px solid black;
+    border-radius:10px;
+    height: 60vh;
 }
 .RegisterPageContentInputContainer{
 padding-bottom:20px;
+border: 0px solid black;
+border-radius: 10px;
 }
 .RegisterPageContentTitleContainer{
     padding: 10px 10px 20px 10px;
-    
+    border-radius: 10px;
 }
 
 .RegisterPagecontentbuttonContainer{
     height: 100px;
-    width: 100px;
+    width: 150px;
+  
 }

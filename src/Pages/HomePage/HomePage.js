@@ -25,6 +25,7 @@ function HomePage() {
                 <CustomNavbar />
             </div>
             <div className="homePageContentBaseContainer">
+                {/* <img src={require("../../assets/images/HomePage.jpg")}></img> */}
                 <Outlet />
             </div>
         </div>

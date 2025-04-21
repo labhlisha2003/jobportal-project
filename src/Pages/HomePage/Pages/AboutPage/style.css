@@ -1,0 +1,148 @@
+.BaseContainer {
+  height: 100vh;
+  width: 100%;
+}
+
+.FirstBaseContainer {
+  display: flex;
+  flex-direction: row;
+  height: 65vh;
+  flex: 2;
+  background-color: beige;
+
+}
+
+.FirstBaseContainer img {
+  padding-top: 30px;
+  height: 450px;
+  width: 110%;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0px;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+.FirstBaseContainer h1 {
+  font-size: 90px;
+  padding-top: 40px;
+  margin: 35px;
+}
+
+.SecondBaseContainer {
+  background-color: beige;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/*.SecondBaseContainer img{
+    gap:0px;
+    height:400px;
+    width:40%;
+    padding-top: 20px;
+    margin: 35px;
+    display: flex;
+    padding-left: 10px;
+    align-items: flex-end;
+}  */
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60vh;
+  width: 100%;
+
+}
+
+.Smallboxes {
+  /* background-color: ; */
+  height: 50vh;
+  width: 600px;
+  border-radius: 30px;
+  box-shadow: 20px solid black;
+
+}
+
+.Smallboxes img {
+  height: 50vh;
+  width: 500px;
+  padding-top: 10px;
+  border-radius: 20px;
+
+}
+
+.Smallboxes h3 {
+  margin: 35px;
+}
+
+.ContentBaseContainer {
+  height: 60vh;
+  width: 100%;
+  background-color: beige;
+}
+
+.big {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60vh;
+  width: 100%;
+}
+
+.bigboxes {
+  height: 10%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.bigboxes h3 {
+  margin: 35px;
+}
+
+.bigboxes img {
+  height: 50vh;
+  width: 100%;
+  padding-top: 10px;
+  border-radius: 30px;
+}
+
+.Section {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60vh;
+  width: 100%;
+  background-color: beige;
+
+}
+
+.Serve {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60vh;
+  width: 100%;
+  
+
+}
+.Serving{
+  
+  
+}
+
+.Serving {
+  background-color:;
+  height: 50vh;
+  width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+ .servingImage1 {
+ max-width:500px ;
+ max-height:400px;
+ border-radius: 10px;
+}
+.Bigboximageee {
+  max-width: 500px;
+  max-height: 400px;
+
+}

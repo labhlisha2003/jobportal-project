@@ -46,13 +46,13 @@ function LoginPage() {
     return (
       <div
        className="loginPageBaseContainer">
-            <img src={require("../../assets/images/job image 1_enhanced.jpg")} ></img>
+        <img src={require("../../assets/images/firstimage.jpg")}></img>
             <div className="loginPageContentBaseContainer">
                 <div className="loginPageContentTitleContainer">
                     <h1>ONLINE JOB PORTAL's</h1>
                      </div>
                      <h2>lets get a job</h2>
-                     {/* <h4>{`Welcome $(email)`}</h4> */}
+                     <h4>{`Welcome $(email)`}</h4> 
                 <div className="loginPageContentInputContainer">
                 <CustomInput type={"text"} placeholder={"Enter Name"} Icon= { MdDriveFileRenameOutline} inputvalue={name}onChangeText={(e)=>{setname(e.target.value)}}/>
                 <CustomInput type={"email"} placeholder={"Enter Email"} Icon={FaUserAlt} inputValue={email} onChangeText={(e) => {setEmail(e.target.value)}}/>
@@ -61,7 +61,7 @@ function LoginPage() {
                 </div>
                 <div className="loginPagecontentButtonContainer">
                     <button onClick={handleLogin}> </button>{""}
-                <CustomButton color={"white"} backgroundColor={"black"} title={"login"}/>
+                <CustomButton color={"white"} backgroundColor={"#001f2d"} title={"login"}/>
                 </div>
 
                 <div className="loginPageContentRegisterContainer"></div>

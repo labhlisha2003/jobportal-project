@@ -9,6 +9,8 @@ import { useNavigate } from "react-router";
 import { auth,database } from "../../firebase";
 import { set, ref } from "firebase/database";
 import { FaKey} from "react-icons/fa";
+import { TfiWrite } from "react-icons/tfi";
+import COLOR from "../../config/color";
 import CustomButton from "../../components/CustomButton/CustomButton";
 
 
@@ -66,12 +68,13 @@ function RegisterPage() {
 
   return (
     <div className="RegisterPageBaseContainer">
-      <img src={require("../../assets/images/Registerimage.jpg")}></img>
+      <img src={require("../../assets/images/registerrrimage.jpg")}></img>
 
       <div className="RegisterPageContentBaseContainer">
         <div className="RegisterPageContentTitleContainer">
           <h1>
             <i>
+             < TfiWrite size={36} color={COLOR.blackColor} />
               <u>IT's TIME TO REGISTER</u>
             </i>
           </h1>
@@ -80,14 +83,14 @@ function RegisterPage() {
         <div className="RegisterPageContentInputContainer">
           <CustomInput
             type={"text"}
-            placeholder={" FirstName"}
+            placeholder={" FullName"}
             Icon={GoDotFill}
             inputValue={FirstName}
             onChangeText={(e) => {
               setFirstName(e.target.value);
             }}
           />
-          <CustomInput
+          {/* <CustomInput
             type={"text"}
             placeholder={" lastName"}
             Icon={GoDotFill}
@@ -95,7 +98,7 @@ function RegisterPage() {
             onChangeText={(e) => {
               setlastName(e.target.value);
             }}
-          />
+          /> */}
           <CustomInput
             type={"text"}
             placeholder={"qualification"}
