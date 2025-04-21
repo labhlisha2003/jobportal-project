@@ -11,7 +11,7 @@ return<div className="FirstBasseContainer">
     <h1>Fashion Designer</h1>
     <MdAddLocation size={35} color={COLOR.blackColor} />
     { <h2>Jorasanko, Kolkata/Calcutta</h2> }
-    
+    <button className="Button"> apply</button>
     </div>
     <div className="SecondGridBoxContent"></div>
      <div className="ThirdGridBoxContentss"></div>

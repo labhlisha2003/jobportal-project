@@ -7,22 +7,19 @@ import CustomButton from "../../../../components/CustomButton/CustomButton";
 const LandingPage = () => {
   const navigate=useNavigate;
   const handleNavigation=()=>{
-    navigate("apply jobs");
-    navigate("see all jobs");
+    navigate("/see all jobs");
   }
   return (
    <div className="BaseContainer">
     <section className="ContentBaseContainer" >
    <img src={require("../../../../assets/images/HomePage.jpg")}/>
     <div className="Contentwriter">
-     <p>"The only way to do great work is to love what you do."</p>
      </div>
      </section>
       <header className="header">
         <h1>See who's hiring in your area.</h1>
         <div className="buttons">
-          <CustomButton backgroundColor={"black"} color={"white"} title={"apply jobs"} onclick={handleNavigation}/>
-          <CustomButton backgroundColor={"BLACK"} color={"white"} title={"see all jobs"} onclick={handleNavigation} />
+         <CustomButton backgroundColor={"BLACK"} color={"white"} title={"see all jobs"} onclick={handleNavigation} />
         </div>
       </header>
       <section className="categories">

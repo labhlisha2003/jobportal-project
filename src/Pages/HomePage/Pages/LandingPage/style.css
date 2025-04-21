@@ -73,7 +73,7 @@
   color: brown;
   padding: 0px 800px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   width: 100%;
 
 }

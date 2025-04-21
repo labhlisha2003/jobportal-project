@@ -6,7 +6,7 @@ function WorkfromhomePage (){
       const navigate = useNavigate();
     
       const gotojobs = () => {
-        navigate('/workhome'); 
+        navigate('/fresher'); 
       }
 return ;
 }
